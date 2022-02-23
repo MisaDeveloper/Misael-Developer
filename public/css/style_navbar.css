@@ -1,0 +1,102 @@
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.container_navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #F5F5F5;
+    border-bottom: 3px solid #FF9900;
+    border-top: 3px solid #FF9900;
+    position: fixed;
+}
+
+.container_navbar > .div_flex_fixed > .logo_img {
+    height: 70px;
+    display: inline;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    float: right;
+    top: 2px;
+}
+
+.container_navbar > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    min-height: 100vh;
+    position: absolute;
+    top: 77px;
+    padding-bottom: 80px;
+    text-align: center;
+    box-shadow: -3px 3px 7px rgb(189, 189, 189);
+    background: rgba(238, 238, 238, 0.95);
+    transition-duration: 0.4s;
+    transform: translateX(-110%);
+}
+
+.container_navbar > ul > li {
+    list-style-type: none;
+}
+
+.container_navbar > ul > li > a {
+    width: fit-content;
+    font-size: 1.15em;
+    text-decoration: none;
+    color: #FF9900;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 3px solid #FF9900;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.checkbtn {
+    display: inline;
+    float: left;
+    font-size: 30px;
+    margin-left: 30px;
+    line-height: 78px;
+}
+
+.checkbtn > i {
+    color: rgb(90, 90, 90);
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.container_navbar > ul > li > a:hover,
+.container_navbar > ul > li > a:active  {
+    background-color: #FF9900;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .container_navbar > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+        min-height: 100vh;
+        position: absolute;
+        top: 77px;
+        padding-bottom: 80px;
+        text-align: center;
+        box-shadow: -3px 3px 7px rgb(189, 189, 189);
+        background: rgba(238, 238, 238, 0.95);
+        transition-duration: 0.4s;
+        transform: translateX(-110%);
+    }
+}
